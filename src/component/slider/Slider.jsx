@@ -43,15 +43,14 @@ function Slider() {
           <div className="slider-circle">
             {img.map((v, i) => {
               return (
-                <>
-                  <label
-                    htmlFor={`circle-${i}`}
-                    onClick={() => {
-                      setimgIndex(i);
-                    }}>
-                    <div className="slider-circle-item" id={`circle-${i}`}></div>
-                  </label>
-                </>
+                <label
+                  key={i}
+                  htmlFor={`circle-${i}`}
+                  onClick={() => {
+                    setimgIndex(i);
+                  }}>
+                  <div className="slider-circle-item" id={`circle-${i}`}></div>
+                </label>
               );
             })}
           </div>

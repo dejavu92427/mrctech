@@ -20,7 +20,7 @@ function Search() {
             setsearchTerm(e.target.value);
             console.log(searchTerm);
           }}
-          placeholder="SEARCH"
+          placeholder="SEARCH..."
         />
         <label className="search-clear" htmlFor="search-clear">
           <AiFillCloseCircle

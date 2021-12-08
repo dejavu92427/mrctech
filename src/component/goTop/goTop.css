@@ -1,0 +1,19 @@
+.gotop {
+  line-height: 4rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 3rem;
+  padding: 0.5rem;
+
+  border: 3px solid var(--black1);
+  background-color: white;
+  text-align: center;
+}
+.gotop > a {
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}

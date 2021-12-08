@@ -73,6 +73,6 @@
   width: 1rem;
   height: 1rem;
 
-  background-color: #ccc;
+  background-color: var(--black1);
   border-radius: 50%;
 }

@@ -1,5 +1,12 @@
-.test-app {
-  background-color: #f1f1f1;
+.mrctech {
+  background-color: var(--black2);
   padding: 1rem;
   margin: 0.5rem;
+  display: flex;
+}
+.mrctech-left {
+  width: 90%;
+}
+.mrctech-right {
+  width: 10%;
 }

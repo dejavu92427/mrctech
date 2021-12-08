@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import cosmeticsReducer from "./cosmeticsSlice";
+import dataReducer from "./dataSlice";
 
 export default configureStore({
   reducer: {
-    cosmetics: cosmeticsReducer,
+    data: dataReducer,
   },
 });

@@ -1,20 +1,23 @@
 .search {
-  background-color: #ccc;
+  background-color: var(--black1);
   width: 100%;
   height: 10vh;
-  padding: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
 
   display: flex;
   justify-content: flex-start;
   align-items: center;
 
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .search-input {
   width: 80%;
-  height: 70%;
-  border-radius: 3px;
+  height: 100%;
+  border-radius: 0.5rem;
   border: none;
   padding-left: 50px;
 }
