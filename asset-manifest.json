@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/mrctech/static/css/main.532bcb45.chunk.css",
+    "main.js": "/mrctech/static/js/main.451ad86d.chunk.js",
+    "main.js.map": "/mrctech/static/js/main.451ad86d.chunk.js.map",
+    "runtime-main.js": "/mrctech/static/js/runtime-main.8cdbb45d.js",
+    "runtime-main.js.map": "/mrctech/static/js/runtime-main.8cdbb45d.js.map",
+    "static/js/2.9a989075.chunk.js": "/mrctech/static/js/2.9a989075.chunk.js",
+    "static/js/2.9a989075.chunk.js.map": "/mrctech/static/js/2.9a989075.chunk.js.map",
+    "index.html": "/mrctech/index.html",
+    "static/css/main.532bcb45.chunk.css.map": "/mrctech/static/css/main.532bcb45.chunk.css.map",
+    "static/js/2.9a989075.chunk.js.LICENSE.txt": "/mrctech/static/js/2.9a989075.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8cdbb45d.js",
+    "static/js/2.9a989075.chunk.js",
+    "static/css/main.532bcb45.chunk.css",
+    "static/js/main.451ad86d.chunk.js"
+  ]
+}
