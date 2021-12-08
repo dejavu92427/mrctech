@@ -6,8 +6,8 @@ import "./index.css";
 
 import { Provider } from "react-redux";
 import store from "./redux/store";
-import { storesFetch } from "./redux/storesSlice";
-store.dispatch(storesFetch());
+import { cosmeticsFetch } from "./redux/cosmeticsSlice";
+store.dispatch(cosmeticsFetch());
 
 ReactDom.render(
   <Provider store={store}>

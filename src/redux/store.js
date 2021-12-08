@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import storseReducer from "./storesSlice";
+import cosmeticsReducer from "./cosmeticsSlice";
 
 export default configureStore({
   reducer: {
-    stores: storseReducer,
+    cosmetics: cosmeticsReducer,
   },
 });
