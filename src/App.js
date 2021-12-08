@@ -6,7 +6,7 @@ import Search from "./component/search/Search";
 
 import Slider from "./component/slider/Slider";
 import Timer from "./component/timer/Timer";
-import Container from "./container/container/Container";
+import Container from "./container/Container";
 function App() {
   return (
     <div className="mrctech">

@@ -6,7 +6,7 @@ import "./item.css";
 
 function Item({ itemId, onHide }) {
   const data = useSelector((state) => state.data.newData);
-  const item = data.filter((v) => v.id == itemId)[0];
+  const item = data.filter((v) => v.id === itemId)[0];
   console.log(item);
 
   return (

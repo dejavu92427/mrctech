@@ -1,6 +1,6 @@
 import React from "react";
-import Selector from "../../component/selector/Selector";
-import List from "../../component/list/List";
+import Selector from "./selector/Selector";
+import List from "./list/List";
 
 import "./container.css";
 

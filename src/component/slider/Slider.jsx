@@ -17,40 +17,36 @@ function Slider() {
     "https://picsum.photos/id/248/1200/500",
   ];
 
-  const [imgIndex, setimgIndex] = useState(0);
+  const [imgIndex, setimgIndex] = useState(3);
 
   return (
     <>
       <div className="slider">
         <div className="slider-container">
           {<img src={img[imgIndex]} alt="" />}
-          <div className="slider-leftbutton">
-            <BsChevronCompactLeft
-              className="slider-directionbutton"
-              onClick={() => {
-                setimgIndex(imgIndex - 1 < 0 ? 0 : imgIndex - 1);
-              }}
-            />
+          <div
+            className="slider-pointer slider-leftbutton"
+            onClick={() => {
+              setimgIndex(imgIndex - 1 < 0 ? 0 : imgIndex - 1);
+            }}>
+            <BsChevronCompactLeft className="slider-directionbutton" />
           </div>
-          <div className="slider-rightbutton">
-            <BsChevronCompactRight
-              className="slider-directionbutton"
-              onClick={() => {
-                setimgIndex(imgIndex + 1 < img.length ? imgIndex + 1 : 9);
-              }}
-            />
+          <div
+            className="slider-pointer slider-rightbutton"
+            onClick={() => {
+              setimgIndex(imgIndex + 1 < img.length ? imgIndex + 1 : 9);
+            }}>
+            <BsChevronCompactRight className="slider-directionbutton" />
           </div>
           <div className="slider-circle">
             {img.map((v, i) => {
               return (
-                <label
+                <div
+                  className={"slider-pointer slider-circle-item" + (imgIndex === i ? " active" : "")}
                   key={i}
-                  htmlFor={`circle-${i}`}
                   onClick={() => {
                     setimgIndex(i);
-                  }}>
-                  <div className="slider-circle-item" id={`circle-${i}`}></div>
-                </label>
+                  }}></div>
               );
             })}
           </div>

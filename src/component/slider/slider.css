@@ -26,27 +26,28 @@
 .slider-directionbutton {
   width: 50px;
   height: 50px;
-  cursor: pointer;
 }
 
 .slider-leftbutton {
-  height: 100%;
+  height: 30%;
+  width: 3%;
+
   position: absolute;
   left: 0;
 
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 
-  display: flex;
+  display: none;
   align-items: center;
 }
 .slider-rightbutton {
-  height: 100%;
+  height: 30%;
+  width: 3%;
   position: absolute;
   right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 
-  background-color: rgba(255, 255, 255, 0.5);
-
-  display: flex;
+  display: none;
   align-items: center;
 }
 
@@ -58,21 +59,30 @@
   display: flex;
   justify-content: center;
 }
-.slider-circle > label {
-  width: 2rem;
-  height: 2rem;
+
+.slider-circle-item {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  background-color: white;
+  border-radius: 50%;
   margin: 0.5rem;
+  opacity: 1;
 
   display: flex;
   justify-content: center;
   align-items: center;
-
+}
+.slider-pointer {
   cursor: pointer;
 }
-.slider-circle-item {
-  width: 1rem;
-  height: 1rem;
-
+.slider:hover .slider-pointer {
+  display: flex;
+}
+.slider-pointer:hover {
+  opacity: 0.8;
+}
+.active {
+  border: 1px solid white;
   background-color: var(--black1);
-  border-radius: 50%;
 }

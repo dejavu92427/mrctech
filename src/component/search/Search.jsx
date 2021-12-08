@@ -1,35 +1,44 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { search } from "../../redux/dataSlice";
 import { FiSearch } from "react-icons/fi";
 import { AiFillCloseCircle } from "react-icons/ai";
 import "./search.css";
 
 function Search() {
   const [searchTerm, setsearchTerm] = useState("");
+  const dispatch = useDispatch();
   return (
     <>
       <div className="search">
-        <label className="search-btn" htmlFor="search-btn">
-          <FiSearch Name="search-btn" />
-        </label>
-
+        <div
+          className="search-btn"
+          onClick={() => {
+            dispatch(search(searchTerm));
+          }}>
+          <FiSearch className="search-btn-icon" />
+        </div>
         <input
           className="search-input"
           type="text"
           value={searchTerm}
           onChange={(e) => {
             setsearchTerm(e.target.value);
-            console.log(searchTerm);
+          }}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              dispatch(search(e.target.value));
+            }
           }}
           placeholder="SEARCH..."
         />
-        <label className="search-clear" htmlFor="search-clear">
-          <AiFillCloseCircle
-            name="search-clear"
-            onClick={() => {
-              setsearchTerm("");
-            }}
-          />
-        </label>
+        <div
+          className="search-clear"
+          onClick={() => {
+            setsearchTerm("");
+          }}>
+          <AiFillCloseCircle className="search-clear-icon" />
+        </div>
       </div>
     </>
   );

@@ -5,6 +5,7 @@ const initialState = {
   status: null,
   data: [],
   newData: [],
+  time: 86400,
 };
 
 export const dataFetch = createAsyncThunk("data/dataFetch", async () => {
@@ -22,6 +23,18 @@ const dataSlice = createSlice({
   name: "data",
   initialState,
   reducers: {
+    timer: (state, action) => {
+      state.time = state.time - 1;
+      console.log(state.time);
+    },
+    search: (state, action) => {
+      state.newData = state.data.filter((v, i) => {
+        if (!action.payload) {
+          return v;
+        }
+        return v.name?.toLowerCase().includes(action.payload.toLowerCase()) || v.category?.toLowerCase().includes(action.payload.toLowerCase());
+      });
+    },
     filterCategory: (state, action) => {
       state.newData = state.data.filter((v) => {
         return v.category === action.payload;
@@ -48,6 +61,6 @@ const dataSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { filterCategory } = dataSlice.actions;
+export const { search, filterCategory, timer } = dataSlice.actions;
 
 export default dataSlice.reducer;

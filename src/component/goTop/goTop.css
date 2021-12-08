@@ -1,5 +1,4 @@
 .gotop {
-  line-height: 4rem;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -10,9 +9,12 @@
   background-color: white;
   text-align: center;
 }
+.gotop:hover {
+  background-color: var(--black1);
+}
 .gotop > a {
   text-decoration: none;
-  scroll-behavior: smooth;
+  color: black;
 }
 html {
   scroll-behavior: smooth;

@@ -3,16 +3,24 @@
 
   display: flex;
   flex-wrap: wrap;
+  /* justify-content: flex-start; */
   justify-content: space-between;
+  background: var(--black1);
 }
 .list-item {
   width: 15%;
   height: 15%;
+  margin: 0.5rem;
   border: 1px solid var(--black1);
   background-color: white;
 
   margin-bottom: 1rem;
   cursor: pointer;
+}
+.fakediv {
+  height: 1px;
+  width: 100px;
+  margin-right: 10px;
 }
 .list-item > img {
   width: 100%;

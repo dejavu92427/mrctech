@@ -26,6 +26,12 @@ function List() {
             </div>
           );
         })}
+        <div className="fakediv"></div>
+        <div className="fakediv"></div>
+        <div className="fakediv"></div>
+        <div className="fakediv"></div>
+        <div className="fakediv"></div>
+        <div className="fakediv"></div>
         {/* ==================popup================== */}
         {popup && (
           <Item
